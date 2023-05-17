@@ -1,18 +1,19 @@
+
 #Exepciones
 #Exepcion ZeroDivisionError.
 try:
-    resultado = 10 / 0
+    resultado = 25 / 0
 except ZeroDivisionError:
-    print("Error: División por cero")
+    print("Error: Division por cero")
 #Excepción IndexError.
 try:
     lista = [1, 2, 3]
-    elemento = lista[4]
+    elemento = lista[63]
 except IndexError:
-    print("Error: Índice fuera de rango")
+    print("Error: Indice fuera de rango")
 #Exepcion TypeError.
 try:
-    resultado = "10" + 5
+    resultado = "35" + 78
 except TypeError:
     print("Error: Tipo de dato incorrecto")
 #Exepcion KeyError.
@@ -25,4 +26,4 @@ except KeyError:
 try:
     resultado = 10 / 0
 except Exception as e:
-    print("Ocurrió un error:", str(e))
+    print("Ocurrio un error:", str(e))
